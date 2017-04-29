@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         lblInformacion.text = "Ciudad";
     }
     @IBAction func pressPais(sender: UIButton) {
-        lblInformacion.text = "Pais";
+        lblInformacion.text = "Pais"; //comentario
     }
 }
 
