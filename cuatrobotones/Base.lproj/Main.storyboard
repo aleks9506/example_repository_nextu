@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cuatrobotones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyA-a6-qCK">
+                                <rect key="frame" x="31" y="221" width="110" height="30"/>
+                                <state key="normal" title="Nombre"/>
+                                <connections>
+                                    <action selector="pressNombre:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obB-Vx-OMO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ub-k0-dqz">
+                                <rect key="frame" x="31" y="299" width="110" height="30"/>
+                                <state key="normal" title="Ciudad"/>
+                                <connections>
+                                    <action selector="pressCiudad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Keh-oT-ALq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esX-9f-CLM">
+                                <rect key="frame" x="180" y="221" width="110" height="30"/>
+                                <state key="normal" title="Apellido"/>
+                                <connections>
+                                    <action selector="pressApellido:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yWF-hZ-cCj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7N-1P-nfC">
+                                <rect key="frame" x="180" y="299" width="110" height="30"/>
+                                <state key="normal" title="Pais"/>
+                                <connections>
+                                    <action selector="pressPais:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Isb-qr-AkG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bogota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tr9-Qo-ykM">
+                                <rect key="frame" x="10" y="35" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnCiudad" destination="7Ub-k0-dqz" id="7rW-Jj-HcJ"/>
+                        <outlet property="btnNombre" destination="OyA-a6-qCK" id="4Cf-aP-2lf"/>
+                        <outlet property="btnPais" destination="u7N-1P-nfC" id="q8E-6D-we0"/>
+                        <outlet property="buttonApellido" destination="esX-9f-CLM" id="N4s-NR-mDU"/>
+                        <outlet property="lblInformacion" destination="tr9-Qo-ykM" id="WQn-fo-Xb6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="289"/>
+        </scene>
+    </scenes>
+</document>
